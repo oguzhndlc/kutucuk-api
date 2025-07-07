@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+  res.json([{ isim: "oguzhan", skor: 3 }]);
+});
+
 app.get('/veri', (req, res) => {
   res.json([{ isim: "oguzhan", skor: 3 }]);
 });
